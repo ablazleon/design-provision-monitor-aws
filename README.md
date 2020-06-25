@@ -86,3 +86,30 @@ Require at least one lowercase letter
 Require at least one number
 Require at least one non-alphanumeric character.
 
+#### Infrastructure as Code with Terraform
+
+
+- [ ] ***Provision AWS Infrastructure as Code with Terraform*** 
+
+AWS Console EC2 screenshot Terraform_1_1 shows:
+
+4 AWS t2.micro EC2 instances named Udacity T2
+2 m4.large EC2 instances named "Udacity M4"
+Updated AWS Console EC2 screenshot Terraform_1_2 shows:
+
+4 AWS t2.micro EC2 instances named "Udacity T2"
+
+- [ ] ***Deploy an AWS Lambda function using Terraform*** 
+
+Infrastructure includes:
+
+A lambda.py file
+A main.tf file
+An outputs.tf file
+A variables.tf file
+AWS CloudWatch log screenshot Terraform_2_3 shows the CloudWatch log entry that correlates to the lambda function
+
+- [ ] ***Delete and Destroy AWS Infrastructure Resources with Terraform*** 
+
+All infrastructure provisioned with Terraform is deleted/ destroyed using the *.tf configuration files
+
