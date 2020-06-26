@@ -26,7 +26,7 @@ All services in the diagram include a label to indicate the type of service and 
 Visible lines represent all network connections
 
 
-- [ ] ***Develop a schematic for a Serverless AWS infrastructure application development project*** The infrastructure includes:
+- [x] ***Develop a schematic for a Serverless AWS infrastructure application development project*** The infrastructure includes:
 
 A user and client machine
 AWS Route 53
@@ -44,6 +44,10 @@ Visible lines represent all network connections
 
 
 - [ ] ***Estimate the monthly cost of the planned infrastructure for Diagram 1*** The monthly cost is between $8,000-10,000 using the AWS Pricing Calculator
+
+[Estimate](https://calculator.aws/#/estimate?id=4f4762e2238876c5b20678f5b9b9bfb57f6957e6)
+
+10.000 GB => 1000 photos aprox
 
 - [ ] ***Modify the infrastructure to reduce the monthly cost*** 
 
