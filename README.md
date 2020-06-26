@@ -57,6 +57,10 @@ The monthly cost is $6,500 or below using the AWS Pricing Calculator
 
 A rationale is provided to explain which services were changed or removed
 
+=>
+
+As it can be seen that more than the 50% of the cost is beacuse of the size of the db and ec2 instances. So it is proposed [this budget](https://calculator.aws/#/estimate?id=74d82b03d412ed04fd371fd27694ae7e7d1a2e84) with this two changes, so to reduce costs by affecting the least the service quality: the first is to reduce the size of the instance to adjust to the budget, and also, the second, to choose booked isntance for, for example, a year.
+
 
 - [ ] ***Modify the infrastructure to increase performance and redundancy*** 
 
@@ -65,6 +69,10 @@ Infrastructure has been re-designed for increased performance and redundancy
 The monthly cost is between $18,000-20,000 using the AWS Pricing Calculator
 
 A rationale is provided to explain which services were changed or removed
+
+=>
+
+It is used the extra budget to pick a double isntance of every service (db, application server and web server), and also multiply by 10 the s3 size. [Budget](https://calculator.aws/#/estimate?id=24218eec5c2455be1e4541a7259284564cd6c0c0)
 
 #### Configure AWS Monitoring and Billing
 
