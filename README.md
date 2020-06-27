@@ -43,13 +43,13 @@ Visible lines represent all network connections
 #### Estimate Costs
 
 
-- [ ] ***Estimate the monthly cost of the planned infrastructure for Diagram 1*** The monthly cost is between $8,000-10,000 using the AWS Pricing Calculator
+- [x] ***Estimate the monthly cost of the planned infrastructure for Diagram 1*** The monthly cost is between $8,000-10,000 using the AWS Pricing Calculator
 
 [Estimate](https://calculator.aws/#/estimate?id=4f4762e2238876c5b20678f5b9b9bfb57f6957e6)
 
 10.000 GB => 1000 photos aprox
 
-- [ ] ***Modify the infrastructure to reduce the monthly cost*** 
+- [x] ***Modify the infrastructure to reduce the monthly cost*** 
 
 The infrastructure includes all required services to run properly
 
@@ -62,7 +62,7 @@ A rationale is provided to explain which services were changed or removed
 As it can be seen that more than the 50% of the cost is beacuse of the size of the db and ec2 instances. So it is proposed [this budget](https://calculator.aws/#/estimate?id=74d82b03d412ed04fd371fd27694ae7e7d1a2e84) with this two changes, so to reduce costs by affecting the least the service quality: the first is to reduce the size of the instance to adjust to the budget, and also, the second, to choose booked isntance for, for example, a year.
 
 
-- [ ] ***Modify the infrastructure to increase performance and redundancy*** 
+- [x] ***Modify the infrastructure to increase performance and redundancy*** 
 
 Infrastructure has been re-designed for increased performance and redundancy
 
@@ -77,10 +77,10 @@ It is used the extra budget to pick a double isntance of every service (db, appl
 #### Configure AWS Monitoring and Billing
 
 
-- [ ] ***Configure a CloudWatch Billing Alarm*** A billing alarm is configured to send an alarm to a valid email address when a $5 billing threshold is met
+- [x] ***Configure a CloudWatch Billing Alarm*** A billing alarm is configured to send an alarm to a valid email address when a $5 billing threshold is met
 The billing alarm has a status of GREEN OK after a refresh period of 5-10 minutes
 
-- [ ] ***Create and Configure IAM Users and Groups*** 
+- [x] ***Create and Configure IAM Users and Groups*** 
 
 A group named CloudTrailAdmins has been created and has the two CloudTrail privileges.
 A group named Reviewers has been created and has the Billing privilege.
@@ -88,7 +88,7 @@ A user named CloudTrail is created and assigned to the CloudTrailAdmins group.
 A user named Accountant is created and assigned to the Reviewers group.
 Both users have AWS Console access
 
-- [ ] ***Update AWS password policy*** 
+- [x] ***Update AWS password policy*** 
 
 Password policy meets or exceeds these requirements:
 
@@ -101,7 +101,7 @@ Require at least one non-alphanumeric character.
 #### Infrastructure as Code with Terraform
 
 
-- [ ] ***Provision AWS Infrastructure as Code with Terraform*** 
+- [x] ***Provision AWS Infrastructure as Code with Terraform*** 
 
 AWS Console EC2 screenshot Terraform_1_1 shows:
 
@@ -111,7 +111,7 @@ Updated AWS Console EC2 screenshot Terraform_1_2 shows:
 
 4 AWS t2.micro EC2 instances named "Udacity T2"
 
-- [ ] ***Deploy an AWS Lambda function using Terraform*** 
+- [x] ***Deploy an AWS Lambda function using Terraform*** 
 
 Infrastructure includes:
 
@@ -121,7 +121,9 @@ An outputs.tf file
 A variables.tf file
 AWS CloudWatch log screenshot Terraform_2_3 shows the CloudWatch log entry that correlates to the lambda function
 
-- [ ] ***Delete and Destroy AWS Infrastructure Resources with Terraform*** 
+I inspired to write the code from the hashicorp and aws tutorials.
+
+- [x] ***Delete and Destroy AWS Infrastructure Resources with Terraform*** 
 
 All infrastructure provisioned with Terraform is deleted/ destroyed using the *.tf configuration files
 
